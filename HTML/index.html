@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <div class="container_form">
+
+        <h1>Formulário de Cadastro</h1>
+
+        
+            
+            <div class="form_grupo">
+                <label for="nome" class="form_label">Nome</label>
+                <input type="text" name="nome" class="form_input" id="nome" placeholder="Ex:Peterson" required>
+            </div>
+            
+            <div class="form_grupo">
+                <label for="sobrenome" class="form_label">Sobrenome</label>
+                <input type="text" name="nome" class="form_input" id="nome" placeholder="Ex: De Almeida Oenning" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="telefone" class="form_label">Telefone</label>
+                <input type="tel" maxlength="15" onkeyup="handlePhone(event)" />
+            </div>
+
+            <div class="form_grupo">
+                <label for="cidade" class="form_label">Cidade</label>
+                <input type="text" name="nome" class="form_input" id="nome" placeholder="Ex: Ouro Preto do Oeste" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="e-mail" class="form_label">Email</label>
+                <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required>
+            </div>    
+
+
+            <div class="form_grupo">
+                
+                <label for="estado" class="text">Estado</label>
+                <select name="estado" class="dropdown" required>
+                    
+                    <option selected disabled class="form_select_option" value="">Selecione</option>
+                    <option value="Solteiro" class="form_select_option">AM</option>
+                    <option value="Casado" class="form_select_option">RO </option>                 
+                
+                </select>
+
+            </div>
+        
+
+</div><!--container_form-->
+
+
+
+</body>
+</html>
